@@ -11,6 +11,7 @@ nav{
   height: 100px;
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 .navbar-img{
   width: 20%;
