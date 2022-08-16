@@ -27,7 +27,33 @@
 .App-link {
   color: #61dafb;
 }
-
+.searchbar-container{
+  display: flex;
+  margin: 0px auto;
+  padding: 0px 20px;
+  align-items: center;
+}
+.searchbar{
+  background-color: white;
+  margin-right: 20px
+}
+.searchbar input{
+  padding: 10px;
+  box-shadow: 0px 2px 2px black;
+  border-radius: 3px;
+  border: none;
+}
+.searchbar input:focus{
+  outline: none;
+}
+.searchbar-btn button{
+background-color: #363636;
+border: none;
+border-radius: 20px;
+height: 100%;
+color: white;
+padding: 10px 20px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +61,67 @@
   to {
     transform: rotate(360deg);
   }
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+.Pokedex{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-gap: 18px;
+  padding: 0px 10px;
+}
+.pokemon-card{
+  display: flex;
+  box-shadow: 4px 4px 4px black;
+  border-radius: 3px;
+  align-items: center;
+}
+.pokemon-img{
+  width: 40%;
+  height: 40%;
+  padding: 10px;
+}
+.pokemon-type{
+  display: flex;
+
+}
+.pokemon-type-text{
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+.card-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  flex: 1;
+
+}
+.card-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-top h3 {
+  text-transform: capitalize;
+}
+.pokemon-favorite{
+  color: red;
+}
+.pagination{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
