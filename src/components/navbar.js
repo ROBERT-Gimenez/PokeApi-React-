@@ -1,13 +1,23 @@
-import React from 'react'
+import React from "react";
+import FavoriteContext from "../contexts/favoriteContext";
 
+const { useContext } = React;
 
-const navbar = () => {
-    return (
-        <nav>
-            <img className='navbar-img' src='https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png' />
-        </nav>
-    )
+const Navbar = () => {
+  const { favoritePokemons } = useContext(FavoriteContext);
 
+  let imgUrl =
+    "https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png";
+
+  return (
+    <nav>
+      <div />
+      <div>
+        <img src={imgUrl} alt="pokeapi-logo" className="navbar-image" />
+      </div>
+      <div>&#10084;&#65039; {favoritePokemons}</div>
+    </nav>
+  );
 };
 
-export default navbar;
+export default Navbar;
